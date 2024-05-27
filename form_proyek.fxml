@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="741.0" prefWidth="1199.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui_sistemmanajemenproyek.Form_proyekController">
+   <left>
+      <AnchorPane prefHeight="742.0" prefWidth="268.0" styleClass="bgBiru" stylesheets="@daftar_anggota.css" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnAgt" layoutX="37.0" layoutY="304.0" mnemonicParsing="false" onAction="#goToFormAnggota" prefHeight="41.0" prefWidth="194.0" styleClass="buttonMenu" stylesheets="@daftar_anggota.css" text="Anggota">
+               <font>
+                  <Font name="Segoe UI" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnJdwl" layoutX="37.0" layoutY="410.0" mnemonicParsing="false" onAction="#goToFormJadwal" prefHeight="41.0" prefWidth="194.0" styleClass="buttonMenu" stylesheets="@daftar_anggota.css" text="Jadwal">
+               <font>
+                  <Font name="Segoe UI" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnTgs" layoutX="37.0" layoutY="357.0" mnemonicParsing="false" onAction="#goToFormTugas" prefHeight="41.0" prefWidth="194.0" styleClass="buttonMenu" stylesheets="@daftar_anggota.css" text="Tugas">
+               <font>
+                  <Font name="Segoe UI" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnMainMenu" layoutX="38.0" layoutY="651.0" mnemonicParsing="false" onAction="#goDashboard" prefHeight="41.0" prefWidth="194.0" styleClass="buttonMenu" stylesheets="@daftar_anggota.css" text="Dashboard">
+               <font>
+                  <Font name="Segoe UI" size="17.0" />
+               </font>
+            </Button>
+            <Label fx:id="lblUsername" alignment="CENTER" layoutY="196.0" prefHeight="23.0" prefWidth="267.0" text="username" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="18.0" />
+               </font>
+            </Label>
+            <Circle fill="WHITE" layoutX="135.0" layoutY="114.0" radius="66.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" />
+            <FontAwesomeIcon fill="#273a89" glyphName="USER" layoutX="91.0" layoutY="150.0" size="7em" />
+            <Button fx:id="btnTim" layoutX="36.0" layoutY="463.0" mnemonicParsing="false" onAction="#goToFormTim" prefHeight="41.0" prefWidth="194.0" styleClass="buttonMenu" stylesheets="@daftar_anggota.css" text="Tim">
+               <font>
+                  <Font name="Segoe UI" size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="742.0" prefWidth="1017.0" styleClass="bgPutih" stylesheets="@daftar_anggota.css" BorderPane.alignment="CENTER">
+         <children>
+            <FontAwesomeIcon fill="#273a89" glyphName="WRENCH" layoutX="139.0" layoutY="581.0" opacity="0.05" size="45em" />
+            <TextField fx:id="fldAnggaran" layoutX="502.0" layoutY="418.0" prefHeight="42.0" prefWidth="310.0" />
+            <Label layoutX="156.0" layoutY="71.0" text="Form Proyek" textFill="#273a89">
+               <font>
+                  <Font name="Segoe UI Bold" size="55.0" />
+               </font>
+            </Label>
+            <TextField fx:id="fldId" layoutX="158.0" layoutY="255.0" prefHeight="42.0" prefWidth="291.0" stylesheets="@daftar_anggota.css" />
+            <TextField fx:id="fldNama" layoutX="502.0" layoutY="255.0" prefHeight="42.0" prefWidth="310.0" />
+            <Label layoutX="158.0" layoutY="227.0" text="ID">
+               <font>
+                  <Font name="Segoe UI Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="502.0" layoutY="227.0" text="Nama">
+               <font>
+                  <Font name="Segoe UI Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="fldTujuan" layoutX="158.0" layoutY="336.0" prefHeight="42.0" prefWidth="654.0" />
+            <Label layoutX="158.0" layoutY="307.0" text="Tujuan">
+               <font>
+                  <Font name="Segoe UI Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="fldDeadline" layoutX="158.0" layoutY="419.0" prefHeight="42.0" prefWidth="291.0" />
+            <Label layoutX="158.0" layoutY="391.0" text="Tenggat Waktu">
+               <font>
+                  <Font name="Segoe UI Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="502.0" layoutY="391.0" text="Anggaran ($)">
+               <font>
+                  <Font name="Segoe UI Bold" size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnTambah" layoutX="329.0" layoutY="577.0" mnemonicParsing="false" onAction="#insertData" prefHeight="42.0" prefWidth="310.0" styleClass="buttonFillBiru" stylesheets="@daftar_anggota.css" text="Tambah">
+               <font>
+                  <Font name="Segoe UI Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
